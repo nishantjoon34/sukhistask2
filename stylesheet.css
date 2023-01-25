@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+body
+{
+  background-color: lightblue;
+  margin:0px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+button{
+  border-radius: 13px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+.an 
+{
+  width: 100px;
+  margin-bottom: 1rem;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+
+#a1 {animation-timing-function: linear;background-color: lightgreen;}
+#a2 {animation-timing-function: ease;;background-color: red}
+#a3 {animation-timing-function: ease-in;;background-color: lightgreen;}
+#a4 {animation-timing-function: ease-out;;background-color: red}
+#a5 {animation-timing-function: ease-in-out;;background-color: lightgreen;}
+
+@keyframes example {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+
+@media only screen and (max-width: 768px)
+{
+  .diff
+  {
+    width: 33%;
+  }
+  .icon
+  {
+    height:3.5rem;
+  }
+@keyframes example {
+  from {left: 0px;}
+  to {left: 150px;}
+}
+
+}
